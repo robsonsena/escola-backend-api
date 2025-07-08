@@ -1,0 +1,11 @@
+services:
+  api:
+    build: .
+    container_name: api-gestao-escolar-java
+    ports:
+      - "8000:8000"
+    volumes:
+      # Monta um volume no host para persistir o banco de dados H2
+      - ./data:/data
+
+
