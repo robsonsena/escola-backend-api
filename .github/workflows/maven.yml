@@ -13,7 +13,14 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+    
+permissions:
+  contents: read
+  actions: read
+  security-events: write
+  id-token: write
+  dependencies: write
+  
 jobs:
   build:
 
